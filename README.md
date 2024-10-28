@@ -10,6 +10,8 @@ A system for automatic prompt optimization using Claude 3.5 models. IPC enables 
 - Multi-model architecture using Claude 3.5 models
 - Simple configuration and usage
 
+Intent-based Prompt Calibration: Enhancing prompt optimization with synthetic boundary cases: https://arxiv.org/abs/2402.03099 
+
 ## Quick Start
 
 ```python
@@ -30,7 +32,3 @@ config = AdvancedIPCConfig(
 ipc = EnhancedIPCSystem(client, config)
 best_prompt, history = ipc.calibrate()
 
-
-
-[Intent-based Prompt Calibration: Enhancing prompt
-optimization with synthetic boundary cases] Research paper: https://arxiv.org/pdf/2402.03099 
