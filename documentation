@@ -1,0 +1,77 @@
+Configuration Options
+pythonCopy@dataclass
+class AdvancedIPCConfig:
+    task_description: str
+    labels: List[str]
+    initial_prompt: Optional[str] = None
+    max_iterations: int = 15
+    samples_per_iteration: int = 10
+    patience: int = 4
+    controversy_threshold: float = 0.6
+    diversity_threshold: float = 0.7
+    eval_temperature: float = 0.1
+    gen_temperature: float = 0.9
+    eval_model: str = "claude-3-haiku-20240307"
+    gen_model: str = "claude-3-opus-20240229"
+Key Components
+
+Synthetic Case Generation
+
+Creates boundary-pushing test cases
+Ensures diverse challenge types
+Maintains realistic content style
+
+
+Evaluation Pipeline
+
+Comprehensive scoring system
+Error pattern analysis
+Performance tracking
+
+
+Prompt Refinement
+
+Systematic improvement process
+Error-driven optimization
+Early stopping mechanism
+
+
+
+📊 Performance
+Example improvement curve:
+CopyInitial Accuracy: 65%
+↓ (5 iterations)
+Mid-optimization: 75%
+↓ (10 iterations)
+Final Accuracy: 85%
+🛠️ Installation
+Requirements
+
+Python 3.8+
+anthropic
+sentence-transformers
+numpy
+tqdm
+tenacity
+
+Installation Steps
+bashCopy# Clone the repository
+git clone https://github.com/yourusername/ipc-prompt.git
+
+# Install dependencies
+cd ipc-prompt
+pip install -r requirements.txt
+🎯 Use Cases
+
+Content Moderation
+
+Harmful content detection
+Bias identification
+Policy violation checking
+
+
+Text Classification
+
+Sentiment analysis
+Topic categorization
+Intent recognition
